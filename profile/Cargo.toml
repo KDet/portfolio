@@ -1,0 +1,60 @@
+[package]
+name = "profile"
+version = "0.1.0"
+authors = ["Dima Kravchyna <dmk-rib@users.noreply.github.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = { version = "0.6.0", features = ["web", "router"] }
+# manganis = "0.6.0"
+
+# dioxus-logger = "0.6.0"
+# dioxus-spring = "0.2.1"
+dioxus-use-mounted = "0.3.0"
+web-sys = "0.3.72"
+wasm-bindgen = "0.2.95"
+
+futures = "0.3.31"
+interpolation = "0.3.0"
+js-sys = "0.3.72"
+async-channel = "2.3.1"
+slotmap = "1.0.7"
+
+serde = { version = "1.0.215", features = ["derive"] }
+syntect-html = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "jk/build-gen" }
+mdbook-shared = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "jk/build-gen" }
+use-mdbook = { git = "https://github.com/dioxuslabs/include_mdbook", branch = "jk/build-gen" }
+
+[profile.release]
+opt-level = "z"
+debug = false
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+incremental = false
+
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+# server = ["dioxus/axum"]
+# desktop = ["dioxus/desktop"]
+# mobile = ["dioxus/mobile"]
+
+
+# [dependencies]
+# async-channel = "2.3.1"
+# futures = "0.3.31"
+# interpolation = "0.3.0"
+# js-sys = "0.3.72"
+# log = "0.4.22"
+# dioxus-logger = "0.4.1"
+# wasm-bindgen = "0.2.95"
+# web-sys = "0.3.72"
+# dioxus-use-mounted = "0.3.0-alpha.4"
+# slotmap = "1.0.7"
+
+# [dev-dependencies]
+# dioxus-resize-observer = "0.3.0-alpha.4"

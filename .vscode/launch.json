@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'builder'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=builder",
+                    "--package=builder"
+                ],
+                "filter": {
+                    "name": "builder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'builder'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=builder",
+                    "--package=builder"
+                ],
+                "filter": {
+                    "name": "builder",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'profile'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=profile",
+                    "--package=profile"
+                ],
+                "filter": {
+                    "name": "profile",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'profile'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=profile",
+                    "--package=profile"
+                ],
+                "filter": {
+                    "name": "profile",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
