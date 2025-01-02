@@ -1333,7 +1333,7 @@ pub fn RustWebDioxus() -> dioxus::prelude::Element {
             class: if dark_mode().0 { "text-neutral-400" } else { "text-gray-600" },
             "The component described here is part of a larger application, which you can view "
             a {
-                href: "https://dmytro-kravchyna.vercel.app/",
+                href: "https://github.com/KDet/portfolio",
                 class: "text-sm underline hover:decoration-2 focus:outline-none focus:decoration-2",
                 class: if dark_mode().0 { "text-neutral-500 hover:text-neutral-400" } else { "text-gray-500 hover:text-gray-800" },
                 "here"

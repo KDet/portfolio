@@ -32,7 +32,7 @@ pub fn Scaffold() -> Element {
                 has_border: true,
                 items: vec![
                     FooterItem { name: "LinkedIn", href: "https://www.linkedin.com/in/dmytro-kravchyna-111a1181" },
-                    FooterItem { name: "Github", href: "https://github.com/KDet" },
+                    FooterItem { name: "Github", href: "https://github.com/KDet/portfolio" },
                 ]
             }
         }

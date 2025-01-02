@@ -251,7 +251,7 @@ With:
     run: dx build --release
 ```
 
-The component described here is part of a larger application, which you can view [here](https://dmytro-kravchyna.vercel.app/).
+The component described here is part of a larger application, which you can view [here](https://github.com/KDet/portfolio).
 
 # Conclusion
 
