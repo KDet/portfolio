@@ -28,3 +28,4 @@ Cargo.lock
 #.idea/
 assets/*.br
 node_modules
+.vercel/
